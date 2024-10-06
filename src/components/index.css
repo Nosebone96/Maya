@@ -1,0 +1,98 @@
+.main-all {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+    padding-top: 10px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff; /* Color de fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding-left: 40px; /* Espacio para el icono */
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 250px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa; /* Color del icono */
+}
+
+.icon-button {
+    border: 1px solid #3490dc; /* Color del borde */
+    background-color: transparent;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.nav {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+.nav-link {
+    color: black; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.nav-link:hover {
+    color: #3490dc; /* Color al pasar el ratón */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .hidden {
+        display: none;
+    }
+    .md-flex {
+        display: flex;
+    }
+}
