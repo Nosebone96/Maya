@@ -1,33 +1,20 @@
 import * as React from "react"
 import "../components/index.css"
-
+import Layout from"../components/layout"
+import Card from "../components/card"
 
 
 const IndexPage = () => {
   return (
-    <main className="main-all">
-      <header classNameName="header">
-        <div className="container">
-            <div className="flex-container">
-                <h1><a href="" className="logo">ARTEMAYA</a></h1>
-                <div className="nav-icons">
-                    <button className="icon-button hidden md-flex">
-                        <span className="menu-icon">☰</span>
-                        <span className="sr-only">Menú</span>
-                    </button>
-                </div>
-            </div>
-            <nav className="nav">
-                <ul className="nav-list">
-                    <li><a href="productos/bolsos.html" className="nav-link">Bolsos</a></li>
-                    <li><a href="productos/manillas.html" className="nav-link">Manillas Tejidas</a></li>
-                    <li><a href="productos/camandulas.html" className="nav-link">Camandulas</a></li>
-                    <li><a href="productos/pañoletas.html" className="nav-link">Pañoletas</a></li>
-                </ul>
-            </nav>
+    <Layout>
+        <div>
+            <h2>hola buenas noches</h2>
+
+            <Card title="manilla" description="hecha de los mejores materiales del mercado" imageUrl="" price="12.000$" />
+
         </div>
-    </header>
-    </main>
+
+    </Layout>
   )
 }
 

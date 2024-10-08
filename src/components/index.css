@@ -3,6 +3,13 @@
     font-family: Arial, sans-serif;
 }
 
+.card:hover {
+
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -22,11 +29,7 @@
 }
 
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: #fff; /* Color de fondo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ddd;
 }
 
 .nav-icons {
