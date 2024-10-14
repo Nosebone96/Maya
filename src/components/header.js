@@ -44,7 +44,7 @@ const Header = () => {
                     <div className="navbar-start">
                         <Link className="navbar-item has-text-danger" to="/">Inicio</Link>
                         <Link className="navbar-item has-text-danger" to="/manillas">Manillas</Link>
-                        <Link className="navbar-item has-text-danger" to="">Mochilas</Link>
+                        <Link className="navbar-item has-text-danger" to="/product">Mochilas</Link>
                         <Link className="navbar-item has-text-danger" to="">Pañoletas</Link>
                         <Link className="navbar-item has-text-danger" to="">Camandulas</Link>
                         

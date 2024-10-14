@@ -10,12 +10,17 @@ const Manillas = ({ data }) => {
 
   return (
     <Layout>
-      <h1>Lista de Productos</h1>
-      <ul>
-        {products.map(({ node }) => (
-          <Card title={node.name} description={node.description} imageUrl={node.imageUrl} price={node.price} />
-        ))}
-      </ul>
+      <h1>Lista de todas las manillas hasta el momento</h1>
+      <div className="fixed-grid has-4-cols-desktop has-1-cols-mobile has-2-cols-tablet is-centered">
+        <div className="grid is-centered">
+          {products.map(({ node }) => (
+              <div className="cell is-col-min-1">
+                <Card name={node.name} description={node.description} imgUrl={node.imgUrl} price={node.price} />
+              </div>
+            ))}
+        </div>
+          
+      </div>
     </Layout>
   );
 };
@@ -28,6 +33,7 @@ export const query = graphql`
         node {
           name
           description
+          imgUrl
           price
           category
         }

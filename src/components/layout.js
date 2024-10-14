@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
         <>
             <div>
                 <Header />
-                <section className="section">
+                <section className="section is-centered">
                     <main>{children}</main>
                 </section> 
                 <Footer /> 

@@ -1,23 +1,24 @@
+import { Link, navigate } from "gatsby";
 import React from "react";
 
 const Card = ({name, description, imgUrl, price}) => {
 
-    const go_product = () => {
-        
-    }
 
     return (
 
-        <div className="card" style={{ maxWidth: "300px" }} onClick={go_product}>
+        <div 
+            className="card" 
+            style={{ maxWidth: "300px", cursor:"pointer", minWidth: "200px" }} 
+            onClick={() => window.location.href = `/product?name=${encodeURIComponent(name)}&description=${encodeURIComponent(description)}&imgUrl=${encodeURIComponent(imgUrl)}&price=${price}`}>
             <div className="card-image">
                 <figure className="image is-4by3">
-                    <img src={imgUrl} alt={name} className="is-rounded" />
+                    <img src={imgUrl} alt={name} />
                 </figure>
             </div>
             <div className="card-content">
                 <div className="media">
                     <div className="media-content">
-                        <p className="title is-4">{name}</p>
+                        <p className="title is-5">{name}</p>
 
                     </div>
 

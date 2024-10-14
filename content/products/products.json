@@ -3,21 +3,42 @@
       "name": "Manilla de cuero",
       "description": "Manilla de cuero genuino, resistente y elegante.",
       "price": 15.00,
-      "imgUrl": "sihola",
+      "imgUrl": "https://via.placeholder.com/300",
       "category": "Manillas"
     },
     {
       "name": "Bolso de tela",
       "description": "Bolso de tela ecológica, ligero y duradero.",
       "price": 30.00,
-      "imgUrl": "sihola",
+      "imgUrl": "https://via.placeholder.com/300",
       "category": "Bolsos"
     },
     {
       "name": "Camándula de madera",
       "description": "Camándula de madera tallada a mano.",
       "price": 20.00,
-      "imgUrl": "sihola",
+      "imgUrl": "https://via.placeholder.com/300",
+      "category": "Camándulas"
+    },
+    {
+      "name": "Manilla de cuero",
+      "description": "Manilla de cuero genuino, resistente y elegante.",
+      "price": 15.00,
+      "imgUrl": "https://via.placeholder.com/300",
+      "category": "Manillas"
+    },
+    {
+      "name": "Bolso de tela",
+      "description": "Bolso de tela ecológica, ligero y duradero.",
+      "price": 30.00,
+      "imgUrl": "https://via.placeholder.com/300",
+      "category": "Bolsos"
+    },
+    {
+      "name": "Camándula de madera",
+      "description": "Camándula de madera tallada a mano.",
+      "price": 20.00,
+      "imgUrl": "https://via.placeholder.com/300",
       "category": "Camándulas"
     }
   ]

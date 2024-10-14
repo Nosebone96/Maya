@@ -8,10 +8,7 @@ const IndexPage = () => {
   return (
     <Layout>
         <div>
-            <h2>hola buenas noches</h2>
-
-            <Card title="manilla" description="hecha de los mejores materiales del mercado" imageUrl="" price="12.000$" />
-
+            <Card name="manilla" description="hecha de los mejores materiales del mercado" imgUrl="https://via.placeholder.com/300" price="12.000$" />
         </div>
 
     </Layout>
