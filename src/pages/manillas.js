@@ -15,7 +15,7 @@ const Manillas = ({ data }) => {
         <div className="grid is-centered">
           {products.map(({ node }) => (
               <div className="cell is-col-min-1">
-                <Card name={node.name} description={node.description} imgUrl={node.imgUrl} price={node.price} />
+                <Card name={node.name} description={node.description} imgUrl={node.imgUrl} price={node.price} jsonId={node.jsonId} category={node.category}/>
               </div>
             ))}
         </div>
@@ -31,6 +31,7 @@ export const query = graphql`
     allProductsJson {
       edges {
         node {
+          jsonId
           name
           description
           imgUrl

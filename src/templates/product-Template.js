@@ -1,24 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Card from "../components/card";
 import Layout from "../components/layout";
-import { Link } from "gatsby";
-import { useLocation } from '@reach/router';
 
 
-const View_product = ({ product }) => {
+const ProductTemplate = ({ data }) => {
 
-    const location = useLocation();
-    const params = new URLSearchParams(location.search);
+    const {name, description, price, imgUrl} = data.productsJson;
 
-    const name = params.get('name');
-    const description = params.get('description');
-    const imgUrl = params.get('imgUrl');
-    const price = params.get('price');
 
-    if (!name || !description || !imgUrl || !price) {
-        return <p>Error: algunos parámetros no están definidos.</p>;
-    }
 
     return (
         <Layout>
@@ -46,5 +35,16 @@ const View_product = ({ product }) => {
       );
 };
 
+export const query = graphql`
+query($jsonId: String!) {
+  productsJson(jsonId: { eq: $jsonId }) {
+    name
+    description
+    price
+    imgUrl
+  }
+}
+`;
 
-export default View_product;
+
+export default ProductTemplate;

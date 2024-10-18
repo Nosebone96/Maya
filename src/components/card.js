@@ -1,15 +1,14 @@
-import { Link, navigate } from "gatsby";
 import React from "react";
 
-const Card = ({name, description, imgUrl, price}) => {
+const Card = ({name, description, imgUrl, price, jsonId, category}) => {
 
 
     return (
 
         <div 
             className="card" 
-            style={{ maxWidth: "300px", cursor:"pointer", minWidth: "200px" }} 
-            onClick={() => window.location.href = `/product?name=${encodeURIComponent(name)}&description=${encodeURIComponent(description)}&imgUrl=${encodeURIComponent(imgUrl)}&price=${price}`}>
+            style={{ maxWidth: "500px", cursor:"pointer", minWidth: "200px" }} 
+            onClick={() => window.location.href = `/products/${category}/${jsonId}`}>
             <div className="card-image">
                 <figure className="image is-4by3">
                     <img src={imgUrl} alt={name} />

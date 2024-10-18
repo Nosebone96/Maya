@@ -1,5 +1,6 @@
 [
     {
+      "id": "1",
       "name": "Manilla de cuero",
       "description": "Manilla de cuero genuino, resistente y elegante.",
       "price": 15.00,
@@ -7,6 +8,7 @@
       "category": "Manillas"
     },
     {
+      "id": "2",
       "name": "Bolso de tela",
       "description": "Bolso de tela ecológica, ligero y duradero.",
       "price": 30.00,
@@ -14,6 +16,7 @@
       "category": "Bolsos"
     },
     {
+      "id": "3",
       "name": "Camándula de madera",
       "description": "Camándula de madera tallada a mano.",
       "price": 20.00,
@@ -21,13 +24,15 @@
       "category": "Camándulas"
     },
     {
+      "id": "4",
       "name": "Manilla de cuero",
       "description": "Manilla de cuero genuino, resistente y elegante.",
       "price": 15.00,
-      "imgUrl": "https://via.placeholder.com/300",
+      "imgUrl": "https://res.cloudinary.com/dpebbtwn8/image/upload/v1729225638/Roboys_ajuaa_ywlbqm.png",
       "category": "Manillas"
     },
     {
+      "id": "5",
       "name": "Bolso de tela",
       "description": "Bolso de tela ecológica, ligero y duradero.",
       "price": 30.00,
@@ -35,6 +40,7 @@
       "category": "Bolsos"
     },
     {
+      "id": "6",
       "name": "Camándula de madera",
       "description": "Camándula de madera tallada a mano.",
       "price": 20.00,
